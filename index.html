@@ -46,22 +46,159 @@
             </div>
           </div>
           <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
+
+          <!-- 세번째슬라이드 (스킬)-->
+          <div class="swiper-slide">
+            <div class="skill_back">
+                <div class="profile">
+                    <h1>PROFILE</h1>
+                    <p>전지우</p>
+
+
+                </div>
+
+
+                <div class="sk_card">
+                    <div class="additional">
+                        <div class="user-card">
+                            <div class="level center">
+                                SKILL
+                            </div>
+                        </div>
+                        <div class="more-info">
+                            <div class="iconbox">
+                                <article>
+                                    <img src="img/html_icon.png" alt="">
+                                    <p>HTML</p>
+                                </article>
+                                <article>
+                                    <img src="img/css_icon.png" alt="icon" >
+                                    <p>CSS</p>
+                                </article>
+                                <article>
+                                    <img src="img/js_icon.png" alt="">
+                                    <p>JAVA SCRIPT</p>
+                                </article>
+                                <article>
+                                    <img src="img/scss_icon.png" alt="">
+                                    <p>SCSS</p>
+                                </article>
+                                <article>
+                                    <img src="img/jquery_icon.png" alt="">
+                                    <p>jquery</p>
+                                </article>
+                                <article>
+                                    <img src="img/react_icon.png" alt="">
+                                    <p>REACT</p>
+                                </article>
+                                <article>
+                                    <img src="img/ajax_icon.png" alt="">
+                                    <p>AJAX</p>
+                                </article>
+                                <article>
+                                    <img src="img/redux_icon.png" alt="">
+                                    <p>redux</p>
+                                </article>
+                                <article>
+                                    <img src="img/ps.png" alt="">
+                                    <p>PHOTOSHOP</p>
+                                </article>
+                                <article>
+                                    <img src="img/figma_icon.png" alt="">
+                                    <p>figma</p>
+                                </article>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- 슬라이드4 -->
+          <div class="swiper-slide">
+
+            <nav class="amazing-tabs">
+                <div class="main-tabs-container">
+                  <div class="main-tabs-wrapper">
+                    <ul class="main-tabs">
+                      <li>
+                        <button class="round-button" 
+                         data-translate-value="0" data-color="red">
+                            1
+                        </button>
+                      </li>
+                      <li>
+                        <button class="round-button gallery active" data-translate-value="100%" data-color="green">
+                          2
+                        </button>
+                      </li>
+                      <li>
+                        <button class="round-button"  data-translate-value="200%" data-color="green">
+                          3
+                        </button>
+                      </li>
+                      <li>
+                        <button class="round-button" data-translate-value="300%" data-color="purple">
+                         4
+                        </button>
+                      </li>
+                      <li>
+                        <button class="round-button"  data-translate-value="400%" data-color="orange">
+                          5
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="main-slider" aria-hidden="true">
+                      <div class="main-slider-circle">&nbsp;</div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+              <div class="pjbox1">
+                <div class="imgbox">
+                    <div class="imgone"></div>
+                   <div class="in_fullimg">
+                        <img src="img/project-5_screen.png" alt="">
+                   </div>
+                </div>
+
+                <div class="pjtextbox">
+                    <h1>react</h1>
+                    <p>리액트를 사용해 만든 쇼핑몰 사이트</p>
+                    
+                </div>
+              </div>
+            
+          </div>
           <div class="swiper-slide">Slide 5</div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
+
+     
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-        
-      
 
         <script src="js/slide.js"></script>
         <script src="js/maintext1.js"></script>
         <script src="js/sidemenu.js"></script>
         
-
+        <script>
+            $(function(){
+                $('.in_fullimg img').hover(function(){
+                $(this).stop().animate({marginTop:-1250}, 4000);
+            }, function(){
+                $(this).stop().animate({marginTop:0}, 1000);
+            });
+            })
+        </script>
 </body>
 </html>
