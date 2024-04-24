@@ -3,20 +3,10 @@ const mainTabs = document.querySelector(".main-tabs");
 const mainSliderCircle = document.querySelector(".main-slider-circle");
 const roundButtons = document.querySelectorAll(".round-button");
 
-const colors = {
-  red: {
-    50: {
-      value: "#fff"
-    },
-    100: {
-      value: "#ffcdd2"
-    }
-  }
-};
 
-const getColor = (color, variant) => {
-  return colors[color][variant].value;
-};
+
+
+
 
 const handleActiveTab = (tabs, event, className) => {
   tabs.forEach((tab) => {

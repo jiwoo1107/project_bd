@@ -159,23 +159,116 @@
                   </div>
                 </div>
               </nav>
-
+              
               <div class="pjbox1">
                 <div class="imgbox">
-                    <div class="imgone"></div>
+                    <div class="imgone">
+                     
+                    </div>
                    <div class="in_fullimg">
                         <img src="img/project-5_screen.png" alt="">
                    </div>
                 </div>
 
                 <div class="pjtextbox">
-                    <h1>react</h1>
-                    <p>리액트를 사용해 만든 쇼핑몰 사이트</p>
-                    
+                    <h1>Carhartt wip</h1>
+                    <h2>React project</h2>
+                    <p class="tdata">24.03.29 - 24.04.19</p>
+                    <div class="tool">
+                      <p>react</p>
+                      <p>redux</p>
+                      <p>swiper</p>
+                      <p>bootstrap</p>
+                    </div>
+                    <div class="ex">React를 사용하여 만든 쇼핑몰 사이트입니다. <br>
+                      의류 브랜드인 칼하트 윕의 공식 사이트에서 <br>
+                       상품 사진들을 가져와 기존의 사이트와 다르게  <br>디자인을 하여 제작하였습니다. <br>
+                      Redux를 사용하여 상품을 장바구니에 추가하고 <br>
+                       수량 변경, 삭제까지 가능하도록 구현하였습니다.
+                    </div>
+
+                    <!-- 버튼 -->
+                    <div class="btn-wrap">
+                    <div class="block-container">
+                      <div class="btn-back btn-back-1"></div>
+                      
+                      <div class="btn-front">
+                        <a href="https://jiwoo1107.github.io/project-5/">
+                          <img src="img/web_icon.svg" alt="">
+                         </a>
+                      </div>
+                     
+                    </div>
+                    <div class="block-container">
+                      <div class="btn-back btn-back-2"></div>
+                      
+                      <div class="btn-front">
+                        <a href="#">
+                          <img src="img/document_icon.svg" alt="">
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+
+                    </div>
                 </div>
+                <div class="pjbox1">
+                  <div class="imgbox">
+                      <div class="imgone">
+                       
+                      </div>
+                     <div class="in_fullimg">
+                          <img src="img/project4_full.png" alt="">
+                     </div>
+                  </div>
+  
+                  <div class="pjtextbox">
+                      <h1>Ridi books</h1>
+                      <h2>Open API project</h2>
+                      <p class="tdata">24.03.11 - 24.03.28</p>
+                      <div class="tool">
+                        <p>AJAX</p>
+                        <p>HTML</p>
+                        <p>SCSS</p>
+                        <p>JavaScript</p>
+                        <p>jquery</p>
+                      </div>
+                      <div class="ex">
+                         Open API를 활용해 제작한 도서 사이트입니다. <br>
+                         기존에 있던 리디북스 사이트 레이아웃에 <br>
+                         AJAX로 책 정보를 불러와 구현하였습니다.
+                      </div>
+  
+                      <!-- 버튼 -->
+                      <div class="btn-wrap">
+                      <div class="block-container">
+                        <div class="btn-back btn-back-1"></div>
+                        
+                        <div class="btn-front">
+                          <a href="https://jiwoo1107.github.io/project4/">
+                            <img src="img/web_icon.svg" alt="">
+                           </a>
+                        </div>
+                       
+                      </div>
+                      <div class="block-container">
+                        <div class="btn-back btn-back-2"></div>
+                        
+                        <div class="btn-front">
+                          <a href="#">
+                            <img src="img/document_icon.svg" alt="">
+                          </a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                
+                      </div>
+                  </div>
+
               </div>
-            
-          </div>
           <div class="swiper-slide">Slide 5</div>
         </div>
         <div class="swiper-pagination"></div>
@@ -190,15 +283,21 @@
         <script src="js/slide.js"></script>
         <script src="js/maintext1.js"></script>
         <script src="js/sidemenu.js"></script>
+        <script src="js/starbg.js"></script>
         
         <script>
             $(function(){
                 $('.in_fullimg img').hover(function(){
-                $(this).stop().animate({marginTop:-1250}, 4000);
+                $(this).stop().animate({marginTop:-850}, 2500);
             }, function(){
                 $(this).stop().animate({marginTop:0}, 1000);
             });
             })
+
+            var swiper = new Swiper(".pj_swiper", {
+            effect: "cards",
+            grabCursor: true,
+          });
         </script>
 </body>
 </html>

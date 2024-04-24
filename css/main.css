@@ -464,7 +464,8 @@ ul.main-tabs li {
   width: 4.8rem;
   border-radius: 50%;
   transition: background-color 0.4s ease-in-out;
-  background-color: var(--main-slider-color);
+  box-shadow: 0 0.8em 0.3em hsla(0, 0%, 0%, 0.3), 0 0 0.2em hsla(0, 0%, 0%, 0.1) inset, 0 -1em 0.5em hsla(0, 0%, 0%, 0.15) inset;
+  background-color: hsla(0, 0%, 0%, 0.04);
 }
 
 .animate-jello {
@@ -540,6 +541,10 @@ ul.main-tabs li {
   color: var(--grey-900);
 }
 
+.pjbox1:nth-of-type(1) {
+  display: none;
+}
+
 .pjbox1 {
   width: 1100px;
   height: 700px;
@@ -548,6 +553,16 @@ ul.main-tabs li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  box-shadow: 0px 0px 50px 5px rgb(226, 226, 226);
+  background-image: url(../img/wave1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.pjbox1 img {
+  width: 100%;
+  position: absolute;
+  z-index: 4;
 }
 
 .pjbox1 .imgbox {
@@ -562,18 +577,22 @@ ul.main-tabs li {
   overflow-x: hidden;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
 }
 
 .pjbox1 .imgbox .imgone {
   width: 600px;
   height: 600px;
-  background-color: rgb(150, 150, 150);
+  background-color: rgb(27, 27, 27);
   border-radius: 100%;
+  background-image: url(../img/gradient-haikei.svg);
+  background-position: center;
+  background-size: cover;
 }
 
 .pjbox1 .imgbox .in_fullimg {
   width: 400px;
-  height: 650px;
+  height: 1500px;
   background-color: pink;
   border-radius: 30px;
   position: absolute;
@@ -584,11 +603,144 @@ ul.main-tabs li {
 
 .in_fullimg img {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .pjtextbox {
   width: 500px;
   height: 95%;
-  background-color: gold;
   margin-right: 20px;
+  align-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pjtextbox p {
+  font-family: "Pretendard-Regular";
+}
+
+.pjtextbox h1 {
+  font-size: 80px;
+  width: 100%;
+  font-family: "Pretendard-Regular";
+  font-weight: 800;
+  color: #fff;
+  text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px black;
+}
+
+.pjtextbox h2 {
+  font-family: "Pretendard-Regular";
+  font-size: 26px;
+  font-weight: 100;
+  margin-top: -10px;
+}
+
+.pjtextbox .tdata {
+  width: 100%;
+  margin-top: -42px;
+  font-size: 15px;
+}
+
+.pjtextbox .tool {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+
+.pjtextbox > .tool > p {
+  width: 90px;
+  height: 35px;
+  border: 1px solid rgb(19, 19, 19);
+  float: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pjtextbox .ex {
+  width: 100%;
+  letter-spacing: 1px;
+  height: 150px;
+  display: flex;
+  margin-top: -10px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  font-family: "Pretendard-Regular";
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.btn-wrap {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-wrap .block-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0px 30px;
+  transition: 200ms;
+  perspective: 800px;
+}
+.btn-wrap .block-container .btn-back {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+  transition: 200ms;
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotateZ(15deg);
+  will-change: transform;
+  box-shadow: 16px 0 40px #e4e4e4;
+}
+.btn-wrap .block-container .btn-back-1 {
+  background: linear-gradient(135deg, rgba(206, 206, 206, 0.7450980392) -10%, #727272 100%);
+}
+.btn-wrap .block-container .btn-back-2 {
+  background: linear-gradient(135deg, rgba(206, 206, 206, 0.7450980392) -10%, #727272 100%);
+}
+.btn-wrap .block-container .btn-front {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-wrap .block-container .btn-front a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.btn-wrap .block-container .btn-front a img {
+  width: 60%;
+  height: 60%;
+  opacity: 0.9;
+}
+.btn-wrap .block-container:hover > .btn-back {
+  transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+}
+.btn-wrap .block-container:hover > .btn-front {
+  transform: translateZ(90px) translateY(-1px) rotateX(0deg) rotateY(15deg);
 }
