@@ -1,303 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    </head>
-    <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-        <header>
-            <h2>JJW</h2>
-            <button id="changeBtn">
-                    <?xml version="1.0" ?><svg  viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="256" width="256"/><circle cx="128" cy="128" fill="none" r="55" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="128" x2="128" y1="36" y2="16"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="62.9" x2="48.8" y1="62.9" y2="48.8"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="36" x2="16" y1="128" y2="128"/><line fill="none" stroke="var(--black)"stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="62.9" x2="48.8" y1="193.1" y2="207.2"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="128" x2="128" y1="220" y2="240"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="193.1" x2="207.2" y1="193.1" y2="207.2"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="220" x2="240" y1="128" y2="128"/><line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="193.1" x2="207.2" y1="62.9" y2="48.8" /></svg>
-                </button>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Project</a>
-                <a href="#">Contact</a>
-            </nav>
+<body>
 
-        </header>
+  <header>
+    <h2><a href="#slide1">JJW</a></h2>
+    <button id="changeBtn">
+      <?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+        <rect fill="none" height="256" width="256" />
+        <circle cx="128" cy="128" fill="none" r="55" stroke="var(--black)" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="16" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="128" x2="128" y1="36" y2="16" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="62.9" x2="48.8" y1="62.9" y2="48.8" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" x1="36"
+          x2="16" y1="128" y2="128" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="62.9" x2="48.8" y1="193.1" y2="207.2" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="128" x2="128" y1="220" y2="240" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="193.1" x2="207.2" y1="193.1" y2="207.2" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="220" x2="240" y1="128" y2="128" />
+        <line fill="none" stroke="var(--black)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"
+          x1="193.1" x2="207.2" y1="62.9" y2="48.8" />
+      </svg>
+    </button>
+    <nav>
+      <a href="#slide1">Home</a>
+      <a href="#slide2">Skills</a>
+      <a href="#slide3">Project</a>
+      <a href="#slide4">Contact</a>
+    </nav>
 
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+  </header>
 
-            <!-- 첫번째 슬라이드 -->
-          <div class="swiper-slide">
-            <div class="slide1_text">
-            <div class="container">
-                <div class="slide-bar" id="slidebar">
-                    <div class="bar" id="bar"></div>
-                </div>
-                <div class="text-block" id="textone">
-                    <h1>PORTFOLIO</h1>
-                </div>
-                <div class="text-block" id="texttwo">
-                    <h1>FRONTEND DEVELOPER</h1>
-                </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- 첫번째 슬라이드 -->
+      <div class="swiper-slide" id="slide1">
+        <div class="slide1_text">
+          <div class="container">
+            <div class="slide-bar" id="slidebar">
+              <div class="bar" id="bar"></div>
             </div>
-        
-            
+            <div class="text-block" id="textone">
+              <h1>PORTFOLIO</h1>
             </div>
-          </div>
-          <div class="swiper-slide">Slide 2</div>
-
-          <!-- 세번째슬라이드 (스킬)-->
-          <div class="swiper-slide">
-            <div class="skill_back">
-                <div class="profile">
-                    <h1>PROFILE</h1>
-                    <p>전지우</p>
-
-
-                </div>
-
-
-                <div class="sk_card">
-                    <div class="additional">
-                        <div class="user-card">
-                            <div class="level center">
-                                SKILL
-                            </div>
-                        </div>
-                        <div class="more-info">
-                            <div class="iconbox">
-                                <article>
-                                    <img src="img/html_icon.png" alt="">
-                                    <p>HTML</p>
-                                </article>
-                                <article>
-                                    <img src="img/css_icon.png" alt="icon" >
-                                    <p>CSS</p>
-                                </article>
-                                <article>
-                                    <img src="img/js_icon.png" alt="">
-                                    <p>JAVA SCRIPT</p>
-                                </article>
-                                <article>
-                                    <img src="img/scss_icon.png" alt="">
-                                    <p>SCSS</p>
-                                </article>
-                                <article>
-                                    <img src="img/jquery_icon.png" alt="">
-                                    <p>jquery</p>
-                                </article>
-                                <article>
-                                    <img src="img/react_icon.png" alt="">
-                                    <p>REACT</p>
-                                </article>
-                                <article>
-                                    <img src="img/ajax_icon.png" alt="">
-                                    <p>AJAX</p>
-                                </article>
-                                <article>
-                                    <img src="img/redux_icon.png" alt="">
-                                    <p>redux</p>
-                                </article>
-                                <article>
-                                    <img src="img/ps.png" alt="">
-                                    <p>PHOTOSHOP</p>
-                                </article>
-                                <article>
-                                    <img src="img/figma_icon.png" alt="">
-                                    <p>figma</p>
-                                </article>
-                            </div>
-                            
-                        </div>
-                    </div>
-                  
-                </div>
+            <div class="text-block" id="texttwo">
+              <h1>FRONTEND DEVELOPER</h1>
             </div>
-
           </div>
 
 
+        </div>
+      </div>
+      
 
-          <!-- 슬라이드4 -->
-          <div class="swiper-slide">
+      <!-- 두번째슬라이드 (프로필))-->
+      <div class="swiper-slide" id="slide2">
+        <div class="skill_back">
+          <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+          
+          <div class="profile">
+            <div class="pro_left">
+            <p>PROFILE</p>
+            <h1>ABOUT ME</h1>
+            <ul class="profile_text">
+              <li>이름</li>
+              <li>생년월일</li>
+              <li>거주지</li>
+              <li>자격증</li>
+            </ul>
+            <ul class="profile_text2">
+              <li>전지우</li>
+              <li>01.11.07</li>
+              <li>경기도 안산시</li>
+              <li>컴퓨터활용능력 2급</li>
+            </ul>
+            </div>
+            <div class="photobox"></div>
+          </div>
 
-            <nav class="amazing-tabs">
-                <div class="main-tabs-container">
-                  <div class="main-tabs-wrapper">
-                    <ul class="main-tabs">
-                      <li>
-                        <button class="round-button" 
-                         data-translate-value="0" data-color="red">
-                            1
-                        </button>
-                      </li>
-                      <li>
-                        <button class="round-button gallery active" data-translate-value="100%" data-color="green">
-                          2
-                        </button>
-                      </li>
-                      <li>
-                        <button class="round-button"  data-translate-value="200%" data-color="green">
-                          3
-                        </button>
-                      </li>
-                      <li>
-                        <button class="round-button" data-translate-value="300%" data-color="purple">
-                         4
-                        </button>
-                      </li>
-                      <li>
-                        <button class="round-button"  data-translate-value="400%" data-color="orange">
-                          5
-                        </button>
-                      </li>
-                    </ul>
-                    <div class="main-slider" aria-hidden="true">
-                      <div class="main-slider-circle">&nbsp;</div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
+
+          <div class="sk_card">
+            <div class="additional">
               
-              <div class="pjbox1">
-                <div class="imgbox">
-                    <div class="imgone">
-                     
-                    </div>
-                   <div class="in_fullimg">
-                        <img src="img/project-5_screen.png" alt="">
-                   </div>
+              <div class="user-card">
+                <div class="level center">
+                  SKILL
                 </div>
-
-                <div class="pjtextbox">
-                    <h1>Carhartt wip</h1>
-                    <h2>React project</h2>
-                    <p class="tdata">24.03.29 - 24.04.19</p>
-                    <div class="tool">
-                      <p>react</p>
-                      <p>redux</p>
-                      <p>swiper</p>
-                      <p>bootstrap</p>
-                    </div>
-                    <div class="ex">React를 사용하여 만든 쇼핑몰 사이트입니다. <br>
-                      의류 브랜드인 칼하트 윕의 공식 사이트에서 <br>
-                       상품 사진들을 가져와 기존의 사이트와 다르게  <br>디자인을 하여 제작하였습니다. <br>
-                      Redux를 사용하여 상품을 장바구니에 추가하고 <br>
-                       수량 변경, 삭제까지 가능하도록 구현하였습니다.
-                    </div>
-
-                    <!-- 버튼 -->
-                    <div class="btn-wrap">
-                    <div class="block-container">
-                      <div class="btn-back btn-back-1"></div>
-                      
-                      <div class="btn-front">
-                        <a href="https://jiwoo1107.github.io/project-5/">
-                          <img src="img/web_icon.svg" alt="">
-                         </a>
-                      </div>
-                     
-                    </div>
-                    <div class="block-container">
-                      <div class="btn-back btn-back-2"></div>
-                      
-                      <div class="btn-front">
-                        <a href="#">
-                          <img src="img/document_icon.svg" alt="">
-                        </a>
-                      </div>
-                      
-                    </div>
-                  </div>
-                
-
-                    </div>
+              </div>
+              <div class="more-info">
+                <div class="iconbox">
+                  <article>
+                    <img src="img/html_icon.png" alt="">
+                    <p>HTML</p>
+                  </article>
+                  <article>
+                    <img src="img/css_icon.png" alt="icon">
+                    <p>CSS</p>
+                  </article>
+                  <article>
+                    <img src="img/js_icon.png" alt="">
+                    <p>JAVA SCRIPT</p>
+                  </article>
+                  <article>
+                    <img src="img/scss_icon.png" alt="">
+                    <p>SCSS</p>
+                  </article>
+                  <article>
+                    <img src="img/jquery_icon.png" alt="">
+                    <p>jquery</p>
+                  </article>
+                  <article>
+                    <img src="img/react_icon.png" alt="">
+                    <p>REACT</p>
+                  </article>
+                  <article>
+                    <img src="img/ajax_icon.png" alt="">
+                    <p>AJAX</p>
+                  </article>
+                  <article>
+                    <img src="img/redux_icon.png" alt="">
+                    <p>redux</p>
+                  </article>
+                  <article>
+                    <img src="img/ps.png" alt="">
+                    <p>PHOTOSHOP</p>
+                  </article>
+                  <article>
+                    <img src="img/figma_icon.png" alt="">
+                    <p>figma</p>
+                  </article>
                 </div>
-                <div class="pjbox1">
-                  <div class="imgbox">
-                      <div class="imgone">
-                       
-                      </div>
-                     <div class="in_fullimg">
-                          <img src="img/project4_full.png" alt="">
-                     </div>
-                  </div>
-  
-                  <div class="pjtextbox">
-                      <h1>Ridi books</h1>
-                      <h2>Open API project</h2>
-                      <p class="tdata">24.03.11 - 24.03.28</p>
-                      <div class="tool">
-                        <p>AJAX</p>
-                        <p>HTML</p>
-                        <p>SCSS</p>
-                        <p>JavaScript</p>
-                        <p>jquery</p>
-                      </div>
-                      <div class="ex">
-                         Open API를 활용해 제작한 도서 사이트입니다. <br>
-                         기존에 있던 리디북스 사이트 레이아웃에 <br>
-                         AJAX로 책 정보를 불러와 구현하였습니다.
-                      </div>
-  
-                      <!-- 버튼 -->
-                      <div class="btn-wrap">
-                      <div class="block-container">
-                        <div class="btn-back btn-back-1"></div>
-                        
-                        <div class="btn-front">
-                          <a href="https://jiwoo1107.github.io/project4/">
-                            <img src="img/web_icon.svg" alt="">
-                           </a>
-                        </div>
-                       
-                      </div>
-                      <div class="block-container">
-                        <div class="btn-back btn-back-2"></div>
-                        
-                        <div class="btn-front">
-                          <a href="#">
-                            <img src="img/document_icon.svg" alt="">
-                          </a>
-                        </div>
-                        
-                      </div>
-                    </div>
-                
-                      </div>
-                  </div>
 
               </div>
-          <div class="swiper-slide">Slide 5</div>
+            </div>
+
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
+
       </div>
 
-     
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 
-        <script src="js/slide.js"></script>
-        <script src="js/maintext1.js"></script>
-        <script src="js/sidemenu.js"></script>
-        <script src="js/starbg.js"></script>
-        
-        <script>
-            $(function(){
-                $('.in_fullimg img').hover(function(){
-                $(this).stop().animate({marginTop:-850}, 2500);
-            }, function(){
-                $(this).stop().animate({marginTop:0}, 1000);
-            });
-            })
+      <!-- 슬라이드3 -->
+      <div class="swiper-slide" id="slide3">
+        <!-- 프로젝트 선택하기 -->
+        <nav class="amazing-tabs">
+          <div class="main-tabs-container">
+            <div class="main-tabs-wrapper">
+              <ul class="main-tabs">
+                <li>
+                  <button class="round-button" data-translate-value="0" data-color="red">
+                    <img src="img/toplogo.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button class="round-button gallery active" data-translate-value="100%" data-color="green">
+                    <img src="img/ridi_icon.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button class="round-button" data-translate-value="200%" data-color="green">
+                    <img src="img/ground_icon.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button class="round-button" data-translate-value="300%" data-color="purple">
+                    <img src="img/mario_icon.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button class="round-button" data-translate-value="400%" data-color="orange">
+                    <img src="img/ticket_icon.png" alt="">
+                  </button>
+                </li>
+              </ul>
+              <div class="main-slider" aria-hidden="true">
+                <div class="main-slider-circle">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+        </nav>
 
-            var swiper = new Swiper(".pj_swiper", {
-            effect: "cards",
-            grabCursor: true,
-          });
-        </script>
+        <!-- 프로젝트 칼하트 -->
+        <div class="pjwrap">
+          <div class="pjbox1">
+            <div class="imgbox">
+              <div class="imgone">
+
+              </div>
+              <div class="in_fullimg">
+                <img src="img/project-5_screen.png" alt="">
+              </div>
+            </div>
+
+            <div class="pjtextbox">
+
+              <h1>CARHARTT WIP</h1>
+              <h2>React project</h2>
+              <p class="tdata">24.03.29 - 24.04.19</p>
+              <div class="tool">
+                <p>react</p>
+                <p>redux</p>
+                <p>swiper</p>
+                <p>bootstrap</p>
+              </div>
+              <div class="ex">React를 사용하여 만든 쇼핑몰 사이트입니다. <br>
+                의류 브랜드인 칼하트 윕의 공식 사이트에서 <br>
+                상품 사진들을 가져와 기존의 사이트와 다르게 <br>디자인을 하여 제작하였습니다. <br>
+                Redux를 사용하여 상품을 장바구니에 추가하고 <br>
+                수량 변경, 삭제까지 가능하도록 구현하였습니다.
+              </div>
+
+              <!-- 버튼 -->
+              <div class="btn-wrap">
+                <div class="block-container">
+                  <div class="btn-back btn-back-1"></div>
+
+                  <div class="btn-front">
+                    <a href="https://jiwoo1107.github.io/project-5/">
+                      <img src="img/web_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+                <div class="block-container">
+                  <div class="btn-back btn-back-2"></div>
+
+                  <div class="btn-front">
+                    <a href="#">
+                      <img src="img/document_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 프로젝트 두번째 -->
+        <div class="pjwrap">
+          <div class="pjbox1">
+            <div class="imgbox">
+              <div class="imgone">
+
+              </div>
+              <div class="in_fullimg">
+                <img src="img/project4_full.png" alt="">
+              </div>
+            </div>
+
+            <div class="pjtextbox">
+              <h1>RIDI BOOKS</h1>
+              <h2>Open API project</h2>
+              <p class="tdata">24.03.11 - 24.03.28</p>
+              <div class="tool">
+                <p>AJAX</p>
+                <p>HTML</p>
+                <p>SCSS</p>
+                <p>JavaScript</p>
+                <p>jquery</p>
+              </div>
+              <div class="ex">
+                Open API를 활용해 제작한 도서 사이트입니다. <br>
+                기존에 있던 리디북스 사이트 레이아웃에 <br>
+                AJAX로 책 정보를 불러와 구현하였습니다.
+              </div>
+
+              <!-- 버튼 -->
+              <div class="btn-wrap">
+                <div class="block-container">
+                  <div class="btn-back btn-back-1"></div>
+
+                  <div class="btn-front">
+                    <a href="https://jiwoo1107.github.io/project4/">
+                      <img src="img/web_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+                <div class="block-container">
+                  <div class="btn-back btn-back-2"></div>
+
+                  <div class="btn-front">
+                    <a href="#">
+                      <img src="img/document_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- 프로젝트 팀프로젝트 -->
+        <div class="pjwrap">
+          <div class="pjbox1">
+            <div class="imgbox">
+              <div class="imgone">
+
+              </div>
+              <div class="in_fullimg">
+                <img src="img/project3.png" alt="">
+              </div>
+            </div>
+
+            <div class="pjtextbox">
+              <h1>GROUND SEESAW</h1>
+              <h2>Team project</h2>
+              <p class="tdata">24.02.22 - 24.03.08</p>
+              <div class="tool">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>jquery</p>
+              </div>
+              <div class="ex">
+                전시 사이트 GROUND SEESOW의 사이트입니다. <br>
+              </div>
+
+              <!-- 버튼 -->
+              <div class="btn-wrap">
+                <div class="block-container">
+                  <div class="btn-back btn-back-1"></div>
+
+                  <div class="btn-front">
+                    <a href="https://nayeye13.github.io/TEAM_PROJECT_GROUNDSEESAW/">
+                      <img src="img/web_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+                <div class="block-container">
+                  <div class="btn-back btn-back-2"></div>
+
+                  <div class="btn-front">
+                    <a href="#">
+                      <img src="img/document_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- 프로젝트 마리오 -->
+        <div class="pjwrap">
+          <div class="pjbox1">
+            <div class="imgbox">
+              <div class="imgone">
+              </div>
+              <div class="in_fullimg">
+                <img src="img/project2_screen.png" alt="">
+              </div>
+            </div>
+
+            <div class="pjtextbox">
+              <h1>SUPER MARIO</h1>
+              <h2>반응형 project</h2>
+              <p class="tdata">24.01.22 - 24.02.16</p>
+              <div class="tool">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>jquery</p>
+              </div>
+              <div class="ex">
+                반응형 프로젝트 슈퍼마리오 <br>
+              </div>
+
+              <!-- 버튼 -->
+              <div class="btn-wrap">
+                <div class="block-container">
+                  <div class="btn-back btn-back-1"></div>
+
+                  <div class="btn-front">
+                    <a href="https://nayeye13.github.io/TEAM_PROJECT_GROUNDSEESAW/">
+                      <img src="img/web_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+                <div class="block-container">
+                  <div class="btn-back btn-back-2"></div>
+
+                  <div class="btn-front">
+                    <a href="#">
+                      <img src="img/document_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- 프로젝트 티켓링크 -->
+        <div class="pjwrap">
+          <div class="pjbox1">
+            <div class="imgbox">
+              <div class="imgone">
+              </div>
+              <div class="in_fullimg">
+                <img src="img/project-1_screen.png" alt="">
+              </div>
+            </div>
+
+            <div class="pjtextbox">
+              <h1>TICKET LINK</h1>
+              <h2>Responsive web project</h2>
+              <p class="tdata">23.12.21 - 24.01.12</p>
+              <div class="tool">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>jquery</p>
+              </div>
+              <div class="ex">
+                쇼핑몰 티켓링크 사이트 <br>
+              </div>
+
+              <!-- 버튼 -->
+              <div class="btn-wrap">
+                <div class="block-container">
+                  <div class="btn-back btn-back-1"></div>
+
+                  <div class="btn-front">
+                    <a href="https://jiwoo1107.github.io/project_1/">
+                      <img src="img/web_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+                <div class="block-container">
+                  <div class="btn-back btn-back-2"></div>
+
+                  <div class="btn-front">
+                    <a href="#">
+                      <img src="img/document_icon.svg" alt="">
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide4">
+
+        <p>010-8553-8730</p>
+        <p>mail : jeon87300@naver.com</p>
+        <h2>Contact</h2>
+
+
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+  <script src="js/slide.js"></script>
+  <script src="js/maintext1.js"></script>
+  <script src="js/sidemenu.js"></script>
+  <script src="js/starbg.js"></script>
+  <script src="js/cardslide.js"></script>
+
+  <script>
+    $(function () {
+      $('.in_fullimg img').hover(function () {
+        $(this).stop().animate({ marginTop: -850 }, 2500);
+      }, function () {
+        $(this).stop().animate({ marginTop: 0 }, 1000);
+      });
+
+      $('.pjwrap:nth-of-type(3) .pjbox1 .imgbox .in_fullimg img').hover(function () {
+        $(this).stop().animate({ marginTop: -2200 }, 3000);
+      }, function () {
+        $(this).stop().animate({ marginTop: 0 }, 1000);
+      });
+
+      $('.pjwrap:nth-of-type(4) .pjbox1 .imgbox .in_fullimg img').hover(function () {
+        $(this).stop().animate({ marginTop: -700 }, 2500);
+      }, function () {
+        $(this).stop().animate({ marginTop: 0 }, 1000);
+      });
+
+      $('.pjwrap:nth-of-type(5) .pjbox1 .imgbox .in_fullimg img').hover(function () {
+        $(this).stop().animate({ marginTop: -450 }, 2000);
+      }, function () {
+        $(this).stop().animate({ marginTop: 0 }, 1000);
+      });
+    })
+
+  </script>
 </body>
+
 </html>

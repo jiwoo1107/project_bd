@@ -4,10 +4,6 @@ const mainSliderCircle = document.querySelector(".main-slider-circle");
 const roundButtons = document.querySelectorAll(".round-button");
 
 
-
-
-
-
 const handleActiveTab = (tabs, event, className) => {
   tabs.forEach((tab) => {
     tab.classList.remove(className);
