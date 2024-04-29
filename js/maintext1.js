@@ -1,22 +1,36 @@
 const root = document.documentElement;
+
 const changeBtn = document.getElementById('changeBtn');
+
+
 let mode = false;
 
 let whiteColor = getComputedStyle(root).getPropertyValue("--white");
 let blackColor = getComputedStyle(root).getPropertyValue("--black");
+let yellowColor = getComputedStyle(root).getPropertyValue("--yellow");
+let blueColor = getComputedStyle(root).getPropertyValue("--blue");
 
-changeBtn.addEventListener('click', (e) => changeColor());
+changeBtn.addEventListener('click', (e) => changeColor() );
+
 
 function changeColor() {
     mode = !mode;
     if(mode) {
+        root.style.setProperty('--yellow', blueColor);
+        root.style.setProperty('--blue', yellowColor);
         root.style.setProperty('--white', blackColor);
         root.style.setProperty('--black', whiteColor);
+        
     } else {
+        root.style.setProperty('--yellow', yellowColor);
+        root.style.setProperty('--blue', blueColor);
         root.style.setProperty('--white', whiteColor);
         root.style.setProperty('--black', blackColor);
+        
     }
 }
+
+
 
 const slideTL = gsap.timeline();
 const maskTL = gsap.timeline();

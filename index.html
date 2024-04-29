@@ -37,10 +37,10 @@
       </svg>
     </button>
     <nav>
-      <a href="#slide1">Home</a>
-      <a href="#slide2">Skills</a>
-      <a href="#slide3">Project</a>
-      <a href="#slide4">Contact</a>
+      <a href="#" class="active">Home</a>
+      <a href="#">Skills</a>
+      <a href="#">Project</a>
+      <a href="#">Contact</a>
     </nav>
 
   </header>
@@ -50,10 +50,20 @@
 
       <!-- 첫번째 슬라이드 -->
       <div class="swiper-slide" id="slide1">
+        <div class="ocean">
+          <div class="wave"></div>
+  
+        </div>
         <div class="slide1_text">
           <div class="container">
             <div class="slide-bar" id="slidebar">
-              <div class="bar" id="bar"></div>
+              <div class="bar" id="bar">
+                <div class="bar_a">
+                  <?xml version="1.0" ?><svg class="icon icon-tabler icon-tabler-trident" fill="none" height="70" stroke="var(--black)" stroke-linecap="round" 
+                  stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="70" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none" stroke="none"/><path d="M3 6l2 -2v3a7 7 0 0 0 14 0v-3l2 2"/><path d="M12 21v-18l-2 2m4 0l-2 -2"/></svg>
+                </div>
+              </div>
+             
             </div>
             <div class="text-block" id="textone">
               <h1>PORTFOLIO</h1>
@@ -70,11 +80,12 @@
 
       <!-- 두번째슬라이드 (프로필))-->
       <div class="swiper-slide" id="slide2">
+        <div class="ocean2">
+          <div class="wave2"></div>
+        </div>
+        
+        
         <div class="skill_back">
-          <div class="ocean">
-            <div class="wave"></div>
-            <div class="wave"></div>
-          </div>
           
           <div class="profile">
             <div class="pro_left">
@@ -85,27 +96,33 @@
               <li>생년월일</li>
               <li>거주지</li>
               <li>자격증</li>
+              <li>교육이수</li>
             </ul>
             <ul class="profile_text2">
               <li>전지우</li>
               <li>01.11.07</li>
               <li>경기도 안산시</li>
               <li>컴퓨터활용능력 2급</li>
+              <li>UI/UX 디자인과 프론트엔드 개발자 양성</li>
             </ul>
             </div>
-            <div class="photobox"></div>
+            <div class="pt">
+              <div class="photobox">
+                <img src="img/gradient-haikei.svg" alt="">
+              </div>
+              <div class="photobox1">
+                
+              </div>
+            </div>
+           
           </div>
 
 
           <div class="sk_card">
-            <div class="additional">
-              
-              <div class="user-card">
-                <div class="level center">
-                  SKILL
-                </div>
-              </div>
-              <div class="more-info">
+            <div class="user-card">
+                <p>SKILLS</p>
+            </div>
+            <div class="more-info">
                 <div class="iconbox">
                   <article>
                     <img src="img/html_icon.png" alt="">
@@ -149,8 +166,8 @@
                   </article>
                 </div>
 
-              </div>
             </div>
+            
 
           </div>
         </div>
@@ -161,6 +178,7 @@
 
       <!-- 슬라이드3 -->
       <div class="swiper-slide" id="slide3">
+        
         <!-- 프로젝트 선택하기 -->
         <nav class="amazing-tabs">
           <div class="main-tabs-container">
@@ -172,7 +190,7 @@
                   </button>
                 </li>
                 <li>
-                  <button class="round-button gallery active" data-translate-value="100%" data-color="green">
+                  <button class="round-button gallery" data-translate-value="100%" data-color="green">
                     <img src="img/ridi_icon.png" alt="">
                   </button>
                 </li>
@@ -202,18 +220,28 @@
         <!-- 프로젝트 칼하트 -->
         <div class="pjwrap">
           <div class="pjbox1">
+
             <div class="imgbox">
+              
               <div class="imgone">
 
               </div>
               <div class="in_fullimg">
-                <img src="img/project-5_screen.png" alt="">
+                <a href="https://jiwoo1107.github.io/project-5/" target="_blank">
+                <img src="img/project-5_screen.png" alt="">  </a>
               </div>
             </div>
 
             <div class="pjtextbox">
-
-              <h1>CARHARTT WIP</h1>
+              <div class="wavetext">
+              <svg width="80" height="60" viewBox="5 0 80 60">
+                <path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"  />
+              </svg>
+              <h4 class="animation-title">CARHARTT WIP</h4>
+              <svg width="80" height="60" viewBox="5 0 80 60"><path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+              </svg>
+            </div>
+            
               <h2>React project</h2>
               <p class="tdata">24.03.29 - 24.04.19</p>
               <div class="tool">
@@ -222,7 +250,7 @@
                 <p>swiper</p>
                 <p>bootstrap</p>
               </div>
-              <div class="ex">React를 사용하여 만든 쇼핑몰 사이트입니다. <br>
+              <div class="ex">React를 사용하여 만든 의류 사이트입니다. <br>
                 의류 브랜드인 칼하트 윕의 공식 사이트에서 <br>
                 상품 사진들을 가져와 기존의 사이트와 다르게 <br>디자인을 하여 제작하였습니다. <br>
                 Redux를 사용하여 상품을 장바구니에 추가하고 <br>
@@ -235,7 +263,7 @@
                   <div class="btn-back btn-back-1"></div>
 
                   <div class="btn-front">
-                    <a href="https://jiwoo1107.github.io/project-5/">
+                    <a href="https://jiwoo1107.github.io/project-5/" target="_blank">
                       <img src="img/web_icon.svg" alt="">
                     </a>
                   </div>
@@ -245,8 +273,8 @@
                   <div class="btn-back btn-back-2"></div>
 
                   <div class="btn-front">
-                    <a href="#">
-                      <img src="img/document_icon.svg" alt="">
+                    <a href="https://drive.google.com/file/d/1mVUmn5pBBUN1cCvHiwznsxtaHT-si80Q/view?usp=sharing" target="_blank">
+                      <img src="img/document_icon.svg" alt="" >
                     </a>
                   </div>
 
@@ -266,12 +294,22 @@
 
               </div>
               <div class="in_fullimg">
-                <img src="img/project4_full.png" alt="">
+                <a href="https://jiwoo1107.github.io/project4/" target="_blank">
+                  <img src="img/project4_full.png" alt="">
+                </a>
               </div>
             </div>
 
             <div class="pjtextbox">
-              <h1>RIDI BOOKS</h1>
+              <div class="wavetext">
+                <svg width="80" height="60" viewBox="5 0 80 60">
+                  <path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"  />
+                </svg>
+                <h4 class="animation-title">RIDI BOOKS</h4>
+                <svg width="80" height="60" viewBox="5 0 80 60"><path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </svg>
+                                      
+              </div>
               <h2>Open API project</h2>
               <p class="tdata">24.03.11 - 24.03.28</p>
               <div class="tool">
@@ -282,9 +320,11 @@
                 <p>jquery</p>
               </div>
               <div class="ex">
-                Open API를 활용해 제작한 도서 사이트입니다. <br>
+                온라인 서점을 주제로 제작한 도서 사이트입니다. <br>
                 기존에 있던 리디북스 사이트 레이아웃에 <br>
-                AJAX로 책 정보를 불러와 구현하였습니다.
+                Open API를 통해 도서 정보를 확인하고  <br>
+                AJAX를 사용하여 도서 정보를 가져와 구현했습니다.
+                
               </div>
 
               <!-- 버튼 -->
@@ -293,7 +333,7 @@
                   <div class="btn-back btn-back-1"></div>
 
                   <div class="btn-front">
-                    <a href="https://jiwoo1107.github.io/project4/">
+                    <a href="https://jiwoo1107.github.io/project4/" target="_blank">
                       <img src="img/web_icon.svg" alt="">
                     </a>
                   </div>
@@ -303,7 +343,7 @@
                   <div class="btn-back btn-back-2"></div>
 
                   <div class="btn-front">
-                    <a href="#">
+                    <a href="https://drive.google.com/file/d/1w6WYREVEQ7U-nrA36o-buwkWO5W-TNjK/view?usp=sharing" target="_blank">
                       <img src="img/document_icon.svg" alt="">
                     </a>
                   </div>
@@ -322,12 +362,21 @@
 
               </div>
               <div class="in_fullimg">
-                <img src="img/project3.png" alt="">
+                <a href="https://nayeye13.github.io/TEAM_PROJECT_GROUNDSEESAW/" target="_blank">
+                  <img src="img/project3.png" alt="">
+                </a>
               </div>
             </div>
 
             <div class="pjtextbox">
-              <h1>GROUND SEESAW</h1>
+              <div class="wavetext">
+                <svg width="80" height="60" viewBox="5 0 80 60">
+                  <path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"  />
+                </svg>
+                <h4 class="animation-title">GROUND SEESAW</h4>
+                <svg width="80" height="60" viewBox="5 0 80 60"><path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </svg>                
+              </div>
               <h2>Team project</h2>
               <p class="tdata">24.02.22 - 24.03.08</p>
               <div class="tool">
@@ -337,7 +386,11 @@
                 <p>jquery</p>
               </div>
               <div class="ex">
-                전시 사이트 GROUND SEESOW의 사이트입니다. <br>
+               전시회 예매 사이트 GROUND SEESOW 입니다. <br>
+               총 3명이 참여한 팀프로젝트로
+               메인 페이지와 <br> 전시 '문도멘도'의 서브 페이지를 담당했습니다. <br>
+               scroll 이벤트를 사용하여 효과를 넣어 <br>
+                전체적으로 부드러운 느낌을 주었습니다.
               </div>
 
               <!-- 버튼 -->
@@ -346,7 +399,7 @@
                   <div class="btn-back btn-back-1"></div>
 
                   <div class="btn-front">
-                    <a href="https://nayeye13.github.io/TEAM_PROJECT_GROUNDSEESAW/">
+                    <a href="https://nayeye13.github.io/TEAM_PROJECT_GROUNDSEESAW/" target="_blank">
                       <img src="img/web_icon.svg" alt="">
                     </a>
                   </div>
@@ -356,7 +409,7 @@
                   <div class="btn-back btn-back-2"></div>
 
                   <div class="btn-front">
-                    <a href="#">
+                    <a href="https://drive.google.com/file/d/1w6WYREVEQ7U-nrA36o-buwkWO5W-TNjK/view?usp=sharing" target="_blank">
                       <img src="img/document_icon.svg" alt="">
                     </a>
                   </div>
@@ -374,13 +427,23 @@
               <div class="imgone">
               </div>
               <div class="in_fullimg">
-                <img src="img/project2_screen.png" alt="">
+                <a href="https://jiwoo1107.github.io/project_2/" target="_blank">
+                  <img src="img/project2_screen.png" alt="">
+                </a>
               </div>
             </div>
 
             <div class="pjtextbox">
-              <h1>SUPER MARIO</h1>
-              <h2>반응형 project</h2>
+              <div class="wavetext">
+                <svg width="80" height="60" viewBox="5 0 80 60">
+                  <path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"  />
+                </svg>
+                <h4 class="animation-title">SUPER MARIO</h4>
+                <svg width="80" height="60" viewBox="5 0 80 60"><path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </svg>
+                                      
+              </div>
+              <h2>Responsive project</h2>
               <p class="tdata">24.01.22 - 24.02.16</p>
               <div class="tool">
                 <p>HTML</p>
@@ -388,7 +451,11 @@
                 <p>jquery</p>
               </div>
               <div class="ex">
-                반응형 프로젝트 슈퍼마리오 <br>
+                닌텐도 스위치 게임 <슈퍼마리오>의 사이트입니다. <br>
+                반응형으로 만들어 사이즈별로 다양하게 확인할 수 있습니다. <br>
+                슈퍼마리오 게임의 모험적인 특성을 참고하여 <br>
+                관광홈페이지의 느낌을 주었습니다.
+
               </div>
 
               <!-- 버튼 -->
@@ -397,7 +464,7 @@
                   <div class="btn-back btn-back-1"></div>
 
                   <div class="btn-front">
-                    <a href="https://nayeye13.github.io/TEAM_PROJECT_GROUNDSEESAW/">
+                    <a href="https://jiwoo1107.github.io/project_2/" target="_blank">
                       <img src="img/web_icon.svg" alt="">
                     </a>
                   </div>
@@ -407,7 +474,7 @@
                   <div class="btn-back btn-back-2"></div>
 
                   <div class="btn-front">
-                    <a href="#">
+                    <a href="https://drive.google.com/file/d/1yupJvBISUMcEGI_FE10UmwNa_WBhTi3p/view?usp=sharing" target="_blank">
                       <img src="img/document_icon.svg" alt="">
                     </a>
                   </div>
@@ -425,13 +492,23 @@
               <div class="imgone">
               </div>
               <div class="in_fullimg">
-                <img src="img/project-1_screen.png" alt="">
+                <a href="https://jiwoo1107.github.io/project_1/" target="_blank">
+                 <img src="img/project-1_screen.png" alt="">
+                </a>
               </div>
             </div>
 
             <div class="pjtextbox">
-              <h1>TICKET LINK</h1>
-              <h2>Responsive web project</h2>
+              <div class="wavetext">
+                <svg width="80" height="60" viewBox="5 0 80 60">
+                  <path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15"  />
+                </svg>
+                <h4 class="animation-title">TICKET LINK</h4>
+                <svg width="80" height="60" viewBox="5 0 80 60"><path class="wavet" fill="none" stroke="#202020" stroke-width="4" stroke-linecap="round" d="M 0 37.5 c 7.684299348848887 0 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15 s 7.172012725592294 15 15 15 s 7.172012725592294 -15 15 -15" />
+                </svg>
+                                      
+              </div>
+              <h2>Web standard</h2>
               <p class="tdata">23.12.21 - 24.01.12</p>
               <div class="tool">
                 <p>HTML</p>
@@ -439,7 +516,11 @@
                 <p>jquery</p>
               </div>
               <div class="ex">
-                쇼핑몰 티켓링크 사이트 <br>
+                첫번째 프로젝트로 웹표준을 준수하여 제작하였습니다. <br>
+                예매사이트 <티켓링크>를 토대로
+                문화생활을 즐기고 싶은 
+                누구나 쉽게 접근할 수 있도록 <br>
+                심플한 레이아웃에 중점을 두었습니다.
               </div>
 
               <!-- 버튼 -->
@@ -458,7 +539,7 @@
                   <div class="btn-back btn-back-2"></div>
 
                   <div class="btn-front">
-                    <a href="#">
+                    <a href="https://drive.google.com/file/d/1EVMIb0GxnRT36qx9aBKJhMqVGjIIT1Ba/view?usp=sharing" target="_blank">
                       <img src="img/document_icon.svg" alt="">
                     </a>
                   </div>
@@ -469,12 +550,43 @@
             </div>
           </div>
         </div>
+        <div class="ocean3">
+          <div class="wave3"></div>
+        </div>
       </div>
       <div class="swiper-slide" id="slide4">
+        <div class="ocean1">
+          <div class="wave1"></div>
+        </div>
 
-        <p>010-8553-8730</p>
-        <p>mail : jeon87300@naver.com</p>
-        <h2>Contact</h2>
+        <div class="ct_info">
+          <h5>Phone Number</h5>
+          <p>010-8553-8730</p>
+          <h5>E-MAIL</h5>
+          <p>jeon87300@naver.com</p>
+        </div>
+
+        <div class="tw">
+          <svg class="con" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="574.558px" height="190px" viewBox="0 0 574.558 120"   xml:space="preserve">
+        <defs>
+        <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+        <path fill="var(--white)" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+       </pattern>
+      
+       <text id="text" transform="matrix(1 0 0 1 -8.0684 116.7852)" font-size="128.047" fill="var(--black)" stroke="none">CONTACT</text>
+      
+        <mask id="text_mask">
+        <use x="0" y="0" xlink:href="#text" opacity="1"
+         class="use1"  fill="#fff"/>
+      </mask>
+    </defs>
+ 
+  <use x="0" y="0" xlink:href="#text" fill="#fff" stroke="none"/>
+  
+  <rect class="water-fill" mask="url(#text_mask)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
+</svg>
+</div>
 
 
       </div>
@@ -493,13 +605,17 @@
   <script src="js/sidemenu.js"></script>
   <script src="js/starbg.js"></script>
   <script src="js/cardslide.js"></script>
+  <script src="js/bg.js"></script>
+  <script src="js/scroll.js"></script>
 
   <script>
     $(function () {
       $('.in_fullimg img').hover(function () {
         $(this).stop().animate({ marginTop: -850 }, 2500);
+        $('.hoverbox').fadeOut();
       }, function () {
         $(this).stop().animate({ marginTop: 0 }, 1000);
+        $('.hoverbox').fadeIn();
       });
 
       $('.pjwrap:nth-of-type(3) .pjbox1 .imgbox .in_fullimg img').hover(function () {
