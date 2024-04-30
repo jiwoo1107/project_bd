@@ -43,10 +43,16 @@ html, body {
 :root {
     --white: #f1f1f1;
     --black: #181717;
+
     --yellow: #ececec;
     --blue: #1212128e;
-    --dark1: #012926e1;
+
+    --dark1: #209c94e1;
     --white2: #add0e7;
+    
+    --shadow: rgb(224, 224, 224);
+    --noshadow : #ffffff00;
+
     --darkone: url(../img/dark_back.svg);
     --lightone: url(../img/gradient-haikei.svg);
   }
@@ -72,16 +78,17 @@ header button svg {width: 100%;}
 header nav { width: 500px; display: flex; justify-content: center; align-items: center; right: 3%; position: absolute; top: 18px; }
   
 
-  header nav a {
+  header nav span {
     position: relative; width: 120px;
     text-align: center; color: #050505;
     text-decoration: none;
     font-weight: bold; padding: 10px 20px;
     transition: 0.2s ease color;
     color: var(--black); font-size: 18px;
+    cursor: pointer;
   }
   
-  header nav a:before, nav a:after {
+  header nav span:before, nav span:after {
     content: "";
     position: absolute;
     border-radius: 50%;
@@ -89,26 +96,27 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
     transition: 0.3s ease transform;
   }
   
-  header nav a:before {
+  header nav span:before {
     top: 0;
     left: 11px;
     width: 6px;
     height: 6px;
   }
   
-  header nav a:after {
+  header nav span:after {
     top: 5px;
     left: 18px;
     width: 4px;
     height: 4px;
   }
   
-  header nav a:before {background-color: rgb(143, 178, 228)}
-  header nav a:after {background-color: var(--black)}
+  header nav span:before {background-color: rgb(143, 178, 228)}
+  header nav span:after {background-color: var(--black)}
 
-  header nav a:hover, .active {opacity: 0.6;}
-  header nav a:hover:before, nav a:hover:after, .active:before, .active:after {transform: scale(3);}
+  header nav span:hover, .active {opacity: 0.6;}
+  header nav span:hover:before, nav a:hover:after, .active:before, .active:after {transform: scale(3);}
 
+  .display_size {position: absolute; right: 20px; bottom: 15px; font-family: 'Pretendard-Regular'; color: #333; font-size: 13px;}
 //   스와이퍼
 .swiper {
   width: 100%;
@@ -139,8 +147,9 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
 
 
   // 슬라이드1
-  .swiper-slide:nth-of-type(1) {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; position: relative; flex-flow: row wrap;
-    }
+  .swiper-slide:nth-of-type(1) {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; position: relative; flex-flow: row wrap;}
+ 
+  .octo img {width: 400px; height: 400px; position: absolute; bottom: 0px; z-index: -5; left: 10%; opacity: 0.3; display: none;}
 
   .slide1_text {width: 800px; height: 350px; }
   
@@ -252,7 +261,7 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
   }
 
   .profile {width: 1000px; height: 400px; display: flex; flex-flow: row wrap;  align-items: center; color: var(--black);
-  font-weight: 800; transform: translateX(-300px); transition: all 3s; opacity: 0;}
+  font-weight: 800; transform: translateX(-300px); transition: all 2s; opacity: 0;}
 
   .profile_text2 li:nth-of-type(5) {width: 280px;}
   .pro_left {width: 50%; height: 100%; padding: 10px;
@@ -284,7 +293,7 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
     position: relative; background-color: var(--yellow);
     box-shadow: 1px 2px 300px 1px rgba(245, 245, 245, 0.055);
     display: flex; justify-content: center; flex-flow: row wrap;
-    transform: translateY(200px); transition: all 3s; opacity: 0;
+    transform: translateY(200px); transition: all 2s; opacity: 0;
     }
   
   .sk_card .user-card {
@@ -301,11 +310,11 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
   
   }
 
-  .sk_card .more-info .iconbox {width: 70%; height: 100%;
+  .sk_card .more-info .iconbox {width: 80%; height: 100%;
    display: flex; justify-content: center;
-  flex-flow: row wrap; align-content: flex-start;}
+  flex-flow: row wrap; align-content: flex-start; }
 
-  .iconbox article {width: 150px; height: 110px; display: flex; justify-content: center; align-content: center; margin-top: 45px;
+  .iconbox article {width: 150px; height: 110px; display: flex; justify-content: center; align-content: center; margin-top: 45px; 
   flex-flow: row wrap; float: left; }
   .iconbox article p {font-size: 15px; font-family: 'Pretendard-Regular';
   width: 100%; color: var(--black); margin-top: 10px; font-weight: 600;}
@@ -342,12 +351,12 @@ display: flex; align-items: center; justify-content: center; position: relative;
 
  
  .swiper-slide:nth-of-type(3) nav.amazing-tabs {
-   background-color: #f1f1f1; border-radius: 2.5rem;
+   background-color: var(--white); border-radius: 2.5rem;
    user-select: none; padding-top: 1rem; float: left; height: 650px;
    width: 100px; display: flex; justify-content: center; flex-flow: row wrap; margin-left: 76px; 
-   box-shadow: inset 10px 10px 10px 1px rgb(224, 224, 224);
+   box-shadow: inset 10px 10px 10px 1px var(--shadow);
   border: 1px solid rgb(224, 224, 224); position: absolute;
-  left: 0; transform: translateX(-200px); transition: all 2s; opacity: 0;}
+  left: 6px; transform: translateX(-300px); transition: all 2s; opacity: 0;}
  
  .swiper-slide:nth-of-type(3) .main-tabs-wrapper {position: relative;}
   ul.main-tabs {
@@ -415,11 +424,12 @@ display: flex; align-items: center; justify-content: center; position: relative;
     0 0.8em 0.3em hsla(0, 0%, 0%, 0.3),
     0 0 0.2em hsla(0, 0%, 0%, 0.1) inset,
     0 -1em 0.5em hsla(0, 0%, 0%, 0.15) inset;
-    background-color: hsla(0, 0%, 0%, 0.04);
+    
  }
  
  .animate-jello {
    animation: jello-horizontal 0.9s both;
+   background-color: #f1f1f1;
  }
  
  @keyframes jello-horizontal {
@@ -499,9 +509,9 @@ display: flex; align-items: center; justify-content: center; position: relative;
 
 
 
- .pjbox1 {width: 1100px; height: 700px; background-color:#f1f1f1; position: relative; display: flex; justify-content: flex-end;
+ .pjbox1 {width: 1100px; height: 700px; background-color: var(--white); position: relative; display: flex; justify-content: flex-end;
 align-items: center; box-shadow: 0px 0px 40px 1px var(--white);
-box-shadow: inset 10px 10px 10px 1px rgb(224, 224, 224);
+box-shadow: inset 10px 10px 10px 1px var(--yellow);
 border: 1px solid rgb(219, 219, 219); 
 
  }
@@ -514,9 +524,8 @@ overflow: hidden; }
 .pjbox1 .imgbox .imgone {width: 660px; height: 600px; border-radius: 100%; background-image: var(--lightone)}
 
 
-.pjbox1 .imgbox .in_fullimg {width: 400px; height: 1500px;
-   background-color: pink; border-radius: 30px; position: absolute;
-  top: 0px; border-radius: 20px; overflow: hidden; border: 2px solid rgb(7, 7, 7);}
+.pjbox1 .imgbox .in_fullimg {width: 400px; height: 1500px; border-radius: 30px; position: absolute;
+  top: 0px; border-radius: 20px; overflow: hidden; border: 2px solid var(--black)}
  .pjwrap:nth-of-type(3) .pjbox1 .imgbox .in_fullimg {width: 400px; height: 2900px;}
  .pjwrap:nth-of-type(4) .pjbox1 .imgbox .in_fullimg {width: 400px; height: 1350px;}
  .pjwrap:nth-of-type(5) .pjbox1 .imgbox .in_fullimg {width: 400px; height: 1100px;}
@@ -535,7 +544,7 @@ display: flex; flex-flow: row wrap; justify-content: center; }
 .pjtextbox .wavetext  {width: 100%; font-family: 'Pretendard-Regular'; }
   .pjwrap:nth-of-type(3) h1 {font-size: 57px;}
   .animation-title {
-    color: #202020;
+    color: var(--black);
     font-size: 3rem;
     font-weight: 700;
     margin:0 0 0.5rem 0;
@@ -571,16 +580,16 @@ display: flex; flex-flow: row wrap; justify-content: center; }
 
  
   .pjtextbox h2 { font-family: 'Pretendard-Regular'; font-size: 24px; 
-  font-weight: 100; margin-bottom: 3px; }
+  font-weight: 100; margin-bottom: 3px; color: var(--black);}
 
-.pjtextbox .tdata {width: 100%; font-size: 14px;  color: #5c5d5e;}
+.pjtextbox .tdata {width: 100%; font-size: 14px;  color: #7a7a7a;}
 .pjtextbox .tool {width: 100%; display: flex; justify-content: center; height: 80px;
 align-items: center; margin-bottom: 5px;}
-.pjtextbox >.tool> p {width: 90px; height: 35px; border: 1px solid rgb(133, 133, 133); float: left; font-size: 16px; display: flex; justify-content: center; align-items: center; margin: 0px 5px; border-radius: 5px;}
-.pjtextbox .ex {width: 98%;  letter-spacing: 1px; height: 250px; display: flex; line-height: 30px; font-size: 18px; text-align: left; font-weight: 500; font-family: 'Pretendard-Regular'; justify-content: center; margin-bottom: 15px; align-items: center; border:dashed 2px  rgb(48, 48, 48); flex-flow: row wrap; padding: 0px 35px;}
+.pjtextbox >.tool> p {width: 90px; height: 35px; border: 1px solid rgb(133, 133, 133); float: left; font-size: 16px; display: flex; justify-content: center; align-items: center; margin: 0px 5px; border-radius: 5px; color: var(--black);}
+.pjtextbox .ex {width: 98%;  letter-spacing: 1px; height: 250px; display: flex; line-height: 30px; font-size: 18px; text-align: left; font-weight: 500; font-family: 'Pretendard-Regular'; justify-content: center; margin-bottom: 15px; align-items: center; flex-flow: row wrap; padding: 0px 35px; color: var(--black);}
 
 
-.btn-wrap { width: 85%; display: flex; justify-content: flex-end; margin-top: 25px;
+.btn-wrap { width: 85%; display: flex; justify-content: flex-end; margin-top: 10px;
 
 .block-container {
   position: relative; width: 60px; height: 60px; margin: 0px 30px; transition: 200ms; perspective: 800px;
@@ -590,7 +599,7 @@ align-items: center; margin-bottom: 5px;}
     width: inherit; height: inherit;
     border-radius: 10px; transition: 200ms; transform-style: preserve-3d;
     transform-origin: bottom right; transform: rotateZ(15deg);
-    will-change: transform; box-shadow: 16px 0 40px #e4e4e4;
+    will-change: transform; box-shadow: 5px 5px 130px #eeeeeea9;
   }
   .btn-back-1, .btn-back-2 {
     background: linear-gradient(135deg, #dbebf1be -5%, var(--white2) 80%);

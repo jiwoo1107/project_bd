@@ -13,6 +13,8 @@ let dark1Color = getComputedStyle(root).getPropertyValue("--dark1");
 let white2Color = getComputedStyle(root).getPropertyValue("--white2");
 let darkoneColor = getComputedStyle(root).getPropertyValue("--darkone");
 let lightoneColor = getComputedStyle(root).getPropertyValue("--lightone");
+let shadowColor = getComputedStyle(root).getPropertyValue("--shadow");
+let noshadowColor = getComputedStyle(root).getPropertyValue("--noshadow");
 
 changeBtn.addEventListener('click', (e) => changeColor() );
 
@@ -22,23 +24,35 @@ function changeColor() {
     if(mode) {
         root.style.setProperty('--yellow', blueColor);
         root.style.setProperty('--blue', yellowColor);
+
         root.style.setProperty('--white', blackColor);
         root.style.setProperty('--black', whiteColor);
+
         root.style.setProperty('--white2', dark1Color);
         root.style.setProperty('--dark1', white2Color);
+
         root.style.setProperty('--darkone', lightoneColor);
         root.style.setProperty('--lightone', darkoneColor);
+
+        root.style.setProperty('--shadow', noshadowColor);
+        root.style.setProperty('--noshadow', shadowColor);
         
         
     } else {
         root.style.setProperty('--yellow', yellowColor);
         root.style.setProperty('--blue', blueColor);
+
         root.style.setProperty('--white', whiteColor);
         root.style.setProperty('--black', blackColor);
+
         root.style.setProperty('--white2', white2Color);
         root.style.setProperty('--dark1', dark1Color);
+
         root.style.setProperty('--darkone', darkoneColor);
         root.style.setProperty('--lightone', lightoneColor);
+
+        root.style.setProperty('--shadow', shadowColor);
+        root.style.setProperty('--noshadow', noshadowColor);
     }
 }
 
