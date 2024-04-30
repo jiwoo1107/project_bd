@@ -114,7 +114,7 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
   header nav span:after {background-color: var(--black)}
 
   header nav span:hover, .active {opacity: 0.6;}
-  header nav span:hover:before, nav a:hover:after, .active:before, .active:after {transform: scale(3);}
+  header nav span:hover:before, nav span:hover:after, .active:before, .active:after {transform: scale(3);}
 
   .display_size {position: absolute; right: 20px; bottom: 15px; font-family: 'Pretendard-Regular'; color: #333; font-size: 13px;}
 //   스와이퍼
@@ -148,8 +148,9 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
 
   // 슬라이드1
   .swiper-slide:nth-of-type(1) {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; position: relative; flex-flow: row wrap;}
- 
-  .octo img {width: 400px; height: 400px; position: absolute; bottom: 0px; z-index: -5; left: 10%; opacity: 0.3; display: none;}
+  
+.octo {width: 500px; height: 500px; position: absolute; bottom: 0px; z-index: -10; left: 10%; opacity: 1; overflow: hidden; display: none;}
+.octo > img {width: 100%; height: 100%; margin-top: 90px;  }
 
   .slide1_text {width: 800px; height: 350px; }
   
