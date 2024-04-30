@@ -43,11 +43,17 @@ var swiper = new Swiper(".mySwiper", {
               $('.pjwrap:nth-of-type(1)').css("transform", "translateY(0px)").css("opacity","1")
             },1800)
           })
+          $('.profile').css("transform", "translateX(-300px)").css("opacity","0")
+          $('.sk_card').css("transform", "translateY(100px)").css("opacity","0")
+          $('.ct_info').css("transform", "translateY(-200px)").css("opacity","0")
+          
         }
         if(idx==3){
           $('header nav a').removeClass("active")
           $('header nav a:nth-of-type(4)').addClass("active")
-          $('.ct_info').css("transform", "translateX(0px)").css("opacity","1")
+          $('.ct_info').css("transform", "translateY(0px)").css("opacity","1")
+          $('.amazing-tabs').css("transform", "translateX(-200px)").css("opacity","0")
+          $('.pjwrap:nth-of-type(1)').css("transform", "translateY(200px)").css("opacity","0")
         }
       }
     }

@@ -7,6 +7,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "TTHakgyoansimSamulhamR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimSamulhamR.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -34,8 +40,12 @@ body {
 :root {
   --white: #f1f1f1;
   --black: #181717;
-  --yellow: #f1f1f1;
-  --blue: #1d2242;
+  --yellow: #ececec;
+  --blue: #1212128e;
+  --dark1: #012926e1;
+  --white2: #add0e7;
+  --darkone: url(../img/dark_back.svg);
+  --lightone: url(../img/gradient-haikei.svg);
 }
 
 header {
@@ -58,6 +68,8 @@ header h2 {
   left: 5%;
   top: 18px;
   font-size: 30px;
+  font-family: "TTHakgyoansimSamulhamR";
+  font-weight: 100;
 }
 
 header h2 a {
@@ -389,6 +401,7 @@ header nav a:hover:before, nav a:hover:after, .active:before, .active:after {
   margin-left: -60px;
   margin-top: -30px;
   overflow: hidden;
+  background: var(--lightone);
 }
 
 .photobox1 {
@@ -425,7 +438,7 @@ header nav a:hover:before, nav a:hover:after, .active:before, .active:after {
   height: 450px;
   position: relative;
   background-color: var(--yellow);
-  box-shadow: 3px 3px 150px 1px rgba(211, 211, 211, 0.308);
+  box-shadow: 1px 2px 300px 1px rgba(245, 245, 245, 0.055);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -516,7 +529,7 @@ header nav a:hover:before, nav a:hover:after, .active:before, .active:after {
 .wave3 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
-  top: -196px;
+  top: -197px;
   transform: scale(1, -1);
   width: 6400px;
   height: 300px;
@@ -570,6 +583,11 @@ ul.main-tabs li {
   padding: 1.5rem;
   z-index: 1;
   border-radius: 100%;
+  height: 75px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
 }
 
 ul.main-tabs li .round-button img {
@@ -707,7 +725,7 @@ ul.main-tabs li .round-button img {
 
 .pjwrap:nth-of-type(1) {
   transform: translateY(-200px);
-  transition: all 3s;
+  transition: all 2s;
   opacity: 0;
 }
 
@@ -765,7 +783,7 @@ ul.main-tabs li .round-button img {
   width: 660px;
   height: 600px;
   border-radius: 100%;
-  background-image: url(../img/gradient-haikei.svg);
+  background-image: var(--lightone);
 }
 
 .pjbox1 .imgbox .in_fullimg {
@@ -950,7 +968,7 @@ ul.main-tabs li .round-button img {
   box-shadow: 16px 0 40px #e4e4e4;
 }
 .btn-wrap .block-container .btn-back-1, .btn-wrap .block-container .btn-back-2 {
-  background: linear-gradient(135deg, rgba(219, 235, 241, 0.7450980392) -5%, #add0e7 80%);
+  background: linear-gradient(135deg, rgba(219, 235, 241, 0.7450980392) -5%, var(--white2) 80%);
 }
 .btn-wrap .block-container .btn-front {
   position: absolute;
@@ -981,7 +999,7 @@ ul.main-tabs li .round-button img {
 }
 .btn-wrap .block-container:hover > .btn-back {
   transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
-  background: linear-gradient(135deg, rgba(131, 192, 212, 0.7450980392) -5%, #add0e7 80%);
+  background: linear-gradient(135deg, rgba(131, 192, 212, 0.7450980392) -5%, var(--white2) 80%);
 }
 .btn-wrap .block-container:hover > .btn-front {
   transform: translateZ(90px) translateY(-1px) rotateX(0deg) rotateY(15deg);
@@ -1088,7 +1106,7 @@ ul.main-tabs li .round-button img {
 }
 
 .water-fill {
-  animation: twave 1.3s infinite linear, fill-up 20s infinite ease-out alternate;
+  animation: twave 1.3s infinite linear, fill-up 10s infinite ease-out alternate;
   font-family: "Pretendard-Regular";
 }
 

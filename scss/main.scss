@@ -11,6 +11,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'TTHakgyoansimSamulhamR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimSamulhamR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 * {
@@ -37,17 +43,22 @@ html, body {
 :root {
     --white: #f1f1f1;
     --black: #181717;
-    --yellow: #f1f1f1;
-    --blue: #1d2242;
+    --yellow: #ececec;
+    --blue: #1212128e;
+    --dark1: #012926e1;
+    --white2: #add0e7;
+    --darkone: url(../img/dark_back.svg);
+    --lightone: url(../img/gradient-haikei.svg);
   }
+ 
+// 헤더
 
-
-//   헤더
 header {width: 100%; height: 80px; display: flex; flex-flow: row wrap; align-content: center; justify-content: center; position: relative; background-color: rgba(255, 255, 255, 0); position: absolute; top: 0px;
   z-index: 4;
   
  }
-header h2 {width: 50px; position: absolute; left: 5%; top: 18px; font-size: 30px;}
+header h2 {width: 50px; position: absolute; left: 5%; top: 18px; font-size: 30px;
+  font-family: 'TTHakgyoansimSamulhamR'; font-weight: 100;}
 header h2 a {color: var(--black);}
 
 header button {
@@ -258,7 +269,9 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
   .pro_left >ul>li {margin-bottom: 8px; font-family: 'Pretendard-Regular'; }
 
   .pt {width: 50%; position: relative;}
-  .photobox {width: 450px; height: 450px; background-color: rgb(226, 226, 226); border-radius: 100%; transform: rotate(-2deg); margin-left: -60px; margin-top: -30px; overflow: hidden;}
+  .photobox {width: 450px; height: 450px; background-color: rgb(226, 226, 226); border-radius: 100%; transform: rotate(-2deg); margin-left: -60px; margin-top: -30px; overflow: hidden;
+  background: var(--lightone);}
+  
 
   .photobox1 {width: 350px; height: 350px; background-color: rgb(226, 226, 226); border-radius: 100%; transform: rotate(-2deg);  margin-top: 80px; z-index: 3; position: absolute; top: 0px; right: 20px; overflow: hidden; }
   .photobox1 img {width: 100%; height: 100%;}
@@ -269,7 +282,7 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
     border-radius: 10px;
     width: 1200px; height: 450px; 
     position: relative; background-color: var(--yellow);
-    box-shadow: 3px 3px 150px 1px rgba(211, 211, 211, 0.308);
+    box-shadow: 1px 2px 300px 1px rgba(245, 245, 245, 0.055);
     display: flex; justify-content: center; flex-flow: row wrap;
     transform: translateY(200px); transition: all 3s; opacity: 0;
     }
@@ -314,7 +327,7 @@ display: flex; align-items: center; justify-content: center; position: relative;
 .wave3 {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
   position: absolute;
-  top: -196px;
+  top: -197px;
   transform: scale(1, -1);
   width: 6400px;
   height: 300px;
@@ -344,7 +357,7 @@ display: flex; align-items: center; justify-content: center; position: relative;
 
   ul.main-tabs li {
    display: inline-flex; position: relative; padding: 1.5rem; z-index: 1;
-    border-radius: 100%;
+    border-radius: 100%;  height: 75px; margin-bottom: 25px; display: flex; align-items: center; margin-top: 25px;
 
    
  }
@@ -478,7 +491,7 @@ display: flex; align-items: center; justify-content: center; position: relative;
    transition: color 0.4s ease-in-out;
    color: var(--grey-900);
  }
-.pjwrap:nth-of-type(1){transform: translateY(-200px); transition: all 3s; opacity: 0;}
+.pjwrap:nth-of-type(1){transform: translateY(-200px); transition: all 2s; opacity: 0;}
  .pjwrap:nth-of-type(2){display: none;}
  .pjwrap:nth-of-type(3){display: none;}
  .pjwrap:nth-of-type(4){display: none;}
@@ -498,7 +511,7 @@ border: 1px solid rgb(219, 219, 219);
  .pjbox1 .imgbox {width: 600px; height: 650px;
 border-radius: 0% 0% 100% 100%; position: absolute; top: -30px; left: -60px;  display: flex; justify-content: center; overflow-x: hidden; display: flex; align-items: flex-end;
 overflow: hidden; }
-.pjbox1 .imgbox .imgone {width: 660px; height: 600px; border-radius: 100%; background-image: url(../img/gradient-haikei.svg);}
+.pjbox1 .imgbox .imgone {width: 660px; height: 600px; border-radius: 100%; background-image: var(--lightone)}
 
 
 .pjbox1 .imgbox .in_fullimg {width: 400px; height: 1500px;
@@ -580,7 +593,7 @@ align-items: center; margin-bottom: 5px;}
     will-change: transform; box-shadow: 16px 0 40px #e4e4e4;
   }
   .btn-back-1, .btn-back-2 {
-    background: linear-gradient(135deg, #dbebf1be -5%, #add0e7 80%);
+    background: linear-gradient(135deg, #dbebf1be -5%, var(--white2) 80%);
   }
 
   
@@ -606,7 +619,7 @@ align-items: center; margin-bottom: 5px;}
   &:hover {
     & > .btn-back {
       transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
-      background: linear-gradient(135deg, #83c0d4be -5%, #add0e7 80%);
+      background: linear-gradient(135deg, #83c0d4be -5%, var(--white2) 80%);
      
     }
 
@@ -660,7 +673,7 @@ letter-spacing: 2px;}
 .swiper-slide:nth-of-type(4) .tw .con {width: 80%; height: 100%; display: flex; justify-content: center; font-family: 'Pretendard-Regular';}
 .water-fill {
   animation: twave 1.3s infinite linear, 
-             fill-up 20s infinite ease-out alternate;
+             fill-up 10s infinite ease-out alternate;
              font-family: 'Pretendard-Regular';
 }
 
