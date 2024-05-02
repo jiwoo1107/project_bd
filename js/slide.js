@@ -17,7 +17,6 @@ var swiper = new Swiper(".mySwiper", {
         console.log(this.activeIndex);
        
 
-
         if(idx==0){
           $('header nav span').removeClass("active")
           $('header nav span:nth-of-type(1)').addClass("active")

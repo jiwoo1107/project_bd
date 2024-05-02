@@ -15,6 +15,8 @@ let darkoneColor = getComputedStyle(root).getPropertyValue("--darkone");
 let lightoneColor = getComputedStyle(root).getPropertyValue("--lightone");
 let shadowColor = getComputedStyle(root).getPropertyValue("--shadow");
 let noshadowColor = getComputedStyle(root).getPropertyValue("--noshadow");
+let underFish = getComputedStyle(root).getPropertyValue("--under");
+let flyingFish = getComputedStyle(root).getPropertyValue("--flying");
 
 changeBtn.addEventListener('click', (e) => changeColor() );
 
@@ -36,6 +38,9 @@ function changeColor() {
 
         root.style.setProperty('--shadow', noshadowColor);
         root.style.setProperty('--noshadow', shadowColor);
+
+        root.style.setProperty('--under', flyingFish);
+        root.style.setProperty('--flying', underFish);
         
         
     } else {
@@ -53,6 +58,9 @@ function changeColor() {
 
         root.style.setProperty('--shadow', shadowColor);
         root.style.setProperty('--noshadow', noshadowColor);
+
+        root.style.setProperty('--under', underFish);
+        root.style.setProperty('--flying', flyingFish);
     }
 }
 
