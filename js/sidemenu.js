@@ -16,7 +16,6 @@ const handleActiveTab = (tabs, event, className) => {
 
 mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
-  const targetColor = event.target.dataset.color;
   const targetTranslateValue = event.target.dataset.translateValue;
 
   if (event.target.classList.contains("round-button")) {
@@ -25,8 +24,7 @@ mainTabs.addEventListener("click", (event) => {
     mainSliderCircle.classList.add("animate-jello");
 
     root.style.setProperty("--translate-main-slider", targetTranslateValue);
-    root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
-    root.style.setProperty("--background-color", getColor(targetColor, 100));
+
 
     handleActiveTab(roundButtons, event, "active");
 
@@ -40,15 +38,3 @@ mainTabs.addEventListener("click", (event) => {
   }
 });
 
-const filterTabs = document.querySelector(".filter-tabs");
-const filterButtons = document.querySelectorAll(".filter-button");
-
-filterTabs.addEventListener("click", (event) => {
-  const root = document.documentElement;
-  const targetTranslateValue = event.target.dataset.translateValue;
-
-  if (event.target.classList.contains("filter-button")) {
-    root.style.setProperty("--translate-filters-slider", targetTranslateValue);
-    handleActiveTab(filterButtons, event, "filter-active");
-  }
-});

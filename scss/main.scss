@@ -18,6 +18,9 @@
   font-style: normal;
 }
 
+@mixin fishmove {
+  width: 150px; height: 150px; position: absolute; z-index: -2; background:var(--flying); background-position: center; background-size: cover; 
+}
 
 * {
     padding: 0;
@@ -113,7 +116,7 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
     height: 4px;
   }
   
-  header nav span:before {background-color: rgb(143, 178, 228)}
+  header nav span:before {background-color: var(--white2)}
   header nav span:after {background-color: var(--black)}
 
   header nav span:hover, .active {opacity: 0.6;}
@@ -146,14 +149,13 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
 .swiper .swiper-pagination-bullet {transform: scale(1.1); background: var(--black); opacity: 1; width: 13px; height: 13px;
 
 }
-.swiper .swiper-pagination-bullet-active {background-color: rgb(167, 196, 238);}
+.swiper .swiper-pagination-bullet-active {background-color: var(--white2);}
 
 
   // 슬라이드1
   .swiper-slide:nth-of-type(1) {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; position: relative; flex-flow: row wrap;}
   
-.octo {width: 150px; height: 150px; position: absolute; z-index: -2; left: 0px; background:var(--flying); background-position: center; background-size: cover; transform: scaleX(-1);
-bottom: 50px; animation: octomove 12s ease-in Infinite ;}
+.octo {@include fishmove; transform: scaleX(-1); bottom: 50px; animation: octomove 13s ease-in Infinite ;}
 
   @keyframes octomove{
   0% {
@@ -161,15 +163,23 @@ bottom: 50px; animation: octomove 12s ease-in Infinite ;}
   }
   10%{opacity: 1;}
   30% {transform:scaleX(-1) rotate(20deg );}
-  60% {bottom: 100px;  transform:scaleX(-1) rotate(-15deg );}
+  60% {bottom: 120px;  transform:scaleX(-1) rotate(-15deg );}
   90%{opacity: 0.8; transform:scaleX(-1) rotate(0deg );}
   100%{
-    left: 1800px; bottom: -150px; opacity: 0.5; 
+    left: 1900px; bottom: -200px; opacity: 0.5; 
    }
-
-
   }
+.octo2 {@include fishmove; bottom: 200px; right: 0px; animation: octomove2 13s ease-in Infinite ;}
+  @keyframes octomove2{
+    0% {right: -150px; bottom: 200px; opacity: 0.3;}
+    30% {transform:rotate(-20deg ); opacity: 1;}
+    100%{
+      right: 1900px; bottom: -300px; opacity: 0.2; 
+    }
+    }
 
+  
+    
 
 .slide1_text {width: 800px; height: 350px; }
   
@@ -272,7 +282,7 @@ bottom: 50px; animation: octomove 12s ease-in Infinite ;}
 
   .ocean2 { 
     height: 35%; width:100%; position:absolute;
-    bottom:0; left:0; background: #015871; opacity: 0.2;
+    bottom:-0.5px; left:0; background: #015871; opacity: 0.2;
   }
   
   .wave2 {
@@ -438,6 +448,7 @@ display: flex; align-items: center; justify-content: center; position: relative;
     0 0.8em 0.3em hsla(0, 0%, 0%, 0.3),
     0 0 0.2em hsla(0, 0%, 0%, 0.1) inset,
     0 -1em 0.5em hsla(0, 0%, 0%, 0.15) inset;
+    background-color: rgb(248, 248, 248);
     
  }
  
@@ -600,7 +611,8 @@ display: flex; flex-flow: row wrap; justify-content: center; }
 .pjtextbox .tool {width: 100%; display: flex; justify-content: center; height: 80px;
 align-items: center; margin-bottom: 5px;}
 .pjtextbox >.tool> p {width: 90px; height: 35px; border: 1px solid rgb(133, 133, 133); float: left; font-size: 16px; display: flex; justify-content: center; align-items: center; margin: 0px 5px; border-radius: 5px; color: var(--black);}
-.pjtextbox .ex {width: 98%;  letter-spacing: 1px; height: 250px; display: flex; line-height: 30px; font-size: 18px; text-align: left; font-weight: 500; font-family: 'Pretendard-Regular'; justify-content: center; margin-bottom: 15px; align-items: center; flex-flow: row wrap; padding: 0px 35px; color: var(--black);}
+.pjtextbox .ex {width: 98%;  letter-spacing: 1px; height: 250px; display: flex; line-height: 30px; text-align: left; font-weight: 500; justify-content: center; margin-bottom: 16px; align-items: center; flex-flow: row wrap; color: var(--black); padding: 0px 10px;}
+.pjtextbox .ex > p {font-size: 18px; font-family: 'Pretendard-Regular'; margin: 0px 25px;}
 
 
 .btn-wrap { width: 85%; display: flex; justify-content: flex-end; margin-top: 10px;
@@ -705,7 +717,6 @@ letter-spacing: 2px;}
   0% { x: -400px; }
   100% { x: 0; }
 }
-
 
 @keyframes fill-up {
   0% {

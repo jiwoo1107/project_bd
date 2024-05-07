@@ -144,7 +144,7 @@ header nav span:after {
 }
 
 header nav span:before {
-  background-color: rgb(143, 178, 228);
+  background-color: var(--white2);
 }
 
 header nav span:after {
@@ -198,7 +198,7 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
 }
 
 .swiper .swiper-pagination-bullet-active {
-  background-color: rgb(167, 196, 238);
+  background-color: var(--white2);
 }
 
 .swiper-slide:nth-of-type(1) {
@@ -216,13 +216,12 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
   height: 150px;
   position: absolute;
   z-index: -2;
-  left: 0px;
   background: var(--flying);
   background-position: center;
   background-size: cover;
   transform: scaleX(-1);
   bottom: 50px;
-  animation: octomove 12s ease-in Infinite;
+  animation: octomove 13s ease-in Infinite;
 }
 
 @keyframes octomove {
@@ -238,7 +237,7 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
     transform: scaleX(-1) rotate(20deg);
   }
   60% {
-    bottom: 100px;
+    bottom: 120px;
     transform: scaleX(-1) rotate(-15deg);
   }
   90% {
@@ -246,9 +245,38 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
     transform: scaleX(-1) rotate(0deg);
   }
   100% {
-    left: 1800px;
-    bottom: -150px;
+    left: 1900px;
+    bottom: -200px;
     opacity: 0.5;
+  }
+}
+.octo2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: -2;
+  background: var(--flying);
+  background-position: center;
+  background-size: cover;
+  bottom: 200px;
+  right: 0px;
+  animation: octomove2 13s ease-in Infinite;
+}
+
+@keyframes octomove2 {
+  0% {
+    right: -150px;
+    bottom: 200px;
+    opacity: 0.3;
+  }
+  30% {
+    transform: rotate(-20deg);
+    opacity: 1;
+  }
+  100% {
+    right: 1900px;
+    bottom: -300px;
+    opacity: 0.2;
   }
 }
 .slide1_text {
@@ -365,7 +393,7 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
   height: 35%;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -0.5px;
   left: 0;
   background: #015871;
   opacity: 0.2;
@@ -696,6 +724,7 @@ ul.main-tabs li .round-button img {
   border-radius: 50%;
   transition: background-color 0.4s ease-in-out;
   box-shadow: 0 0.8em 0.3em hsla(0, 0%, 0%, 0.3), 0 0 0.2em hsla(0, 0%, 0%, 0.1) inset, 0 -1em 0.5em hsla(0, 0%, 0%, 0.15) inset;
+  background-color: rgb(248, 248, 248);
 }
 
 .animate-jello {
@@ -977,16 +1006,20 @@ ul.main-tabs li .round-button img {
   height: 250px;
   display: flex;
   line-height: 30px;
-  font-size: 18px;
   text-align: left;
   font-weight: 500;
-  font-family: "Pretendard-Regular";
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   align-items: center;
   flex-flow: row wrap;
-  padding: 0px 35px;
   color: var(--black);
+  padding: 0px 10px;
+}
+
+.pjtextbox .ex > p {
+  font-size: 18px;
+  font-family: "Pretendard-Regular";
+  margin: 0px 25px;
 }
 
 .btn-wrap {
