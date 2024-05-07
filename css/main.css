@@ -48,7 +48,7 @@ body {
   --noshadow: #ffffff00;
   --darkone: url(../img/dark_back.svg);
   --lightone: url(../img/gradient-haikei.svg);
-  --under: url(../img/underfis.gif);
+  --under: url(../img/underfish.png);
   --flying: url(../img/);
 }
 
@@ -217,15 +217,40 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
   position: absolute;
   z-index: -2;
   left: 0px;
-  opacity: 1;
-  overflow: hidden;
   background: var(--flying);
   background-position: center;
   background-size: cover;
   transform: scaleX(-1);
   bottom: 50px;
+  animation: octomove 10s ease-in Infinite;
 }
 
+@keyframes octomove {
+  0% {
+    left: -150px;
+    bottom: 50px;
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    transform: scaleX(-1) rotate(20deg);
+  }
+  70% {
+    bottom: 100px;
+    transform: scaleX(-1) rotate(-10deg);
+  }
+  90% {
+    opacity: 0.8;
+    transform: scaleX(-1) rotate(0deg);
+  }
+  100% {
+    left: 1700px;
+    bottom: -150px;
+    opacity: 0.5;
+  }
+}
 .slide1_text {
   width: 800px;
   height: 350px;
@@ -620,8 +645,8 @@ ul.main-tabs li {
 }
 
 ul.main-tabs li .round-button img {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   z-index: -5;
 }
 
@@ -645,11 +670,6 @@ ul.main-tabs li .round-button img {
   align-items: center;
   justify-content: center;
   transition: color 0.2s ease-in-out;
-}
-
-.round-button:hover,
-.round-button.active {
-  color: var(--round-button-active-color);
 }
 
 .round-button svg {
