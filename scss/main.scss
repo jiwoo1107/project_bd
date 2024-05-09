@@ -312,8 +312,9 @@ header nav { width: 500px; display: flex; justify-content: center; align-items: 
   background: var(--lightone);}
   
 
-  .photobox1 {width: 350px; height: 350px; background-color: rgb(226, 226, 226); border-radius: 100%; transform: rotate(-2deg);  margin-top: 80px; z-index: 3; position: absolute; top: 0px; right: 20px; overflow: hidden; }
-  .photobox1 img {width: 100%; height: 100%;}
+  .photobox1 {width: 350px; height: 350px; background-color: rgb(226, 226, 226); border-radius: 100%; transform: rotate(-2deg);  margin-top: 80px;  position: absolute; top: 0px; right: 20px; overflow: hidden; }
+
+  .photobox1 img {width: 100%; height: 100%; }
 
 
   .skill_back {width: 100%; height: 100%; display: flex; justify-content: center; align-content: flex-end; flex-flow: row wrap;  }
@@ -611,7 +612,10 @@ display: flex; flex-flow: row wrap; justify-content: center; }
 .pjtextbox .tool {width: 100%; display: flex; justify-content: center; height: 80px;
 align-items: center; margin-bottom: 5px;}
 .pjtextbox >.tool> p {width: 90px; height: 35px; border: 1px solid rgb(133, 133, 133); float: left; font-size: 16px; display: flex; justify-content: center; align-items: center; margin: 0px 5px; border-radius: 5px; color: var(--black);}
-.pjtextbox .ex {width: 98%;  letter-spacing: 1px; height: 250px; display: flex; line-height: 30px; text-align: left; font-weight: 500; justify-content: center; margin-bottom: 16px; align-items: center; flex-flow: row wrap; color: var(--black); padding: 0px 10px;}
+.pjtextbox .ex {width: 98%;  letter-spacing: 1px; height: 250px; display: flex; line-height: 30px; text-align: left; font-weight: 500; justify-content: center; margin-bottom: 16px; align-items: center; flex-flow: row wrap; color: var(--black); padding: 0px; }
+
+
+
 .pjtextbox .ex > p {font-size: 18px; font-family: 'Pretendard-Regular'; margin: 0px 25px;}
 
 

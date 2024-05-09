@@ -493,7 +493,6 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
   border-radius: 100%;
   transform: rotate(-2deg);
   margin-top: 80px;
-  z-index: 3;
   position: absolute;
   top: 0px;
   right: 20px;
@@ -1013,7 +1012,7 @@ ul.main-tabs li .round-button img {
   align-items: center;
   flex-flow: row wrap;
   color: var(--black);
-  padding: 0px 10px;
+  padding: 0px;
 }
 
 .pjtextbox .ex > p {
