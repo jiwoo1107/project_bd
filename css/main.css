@@ -422,9 +422,10 @@ header nav span:hover:before, nav span:hover:after, .active:before, .active:afte
   opacity: 0;
 }
 
-.profile_text2 li:nth-of-type(5) {
-  width: 280px;
-}
+.profile_text li:nth-of-type(4) {height: 45px;}
+
+.profile_text2 li {width: 280px;}
+.profile_text2 li:nth-of-type(4) {line-height:22px;}
 
 .pro_left {
   width: 50%;
